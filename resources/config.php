@@ -6,10 +6,11 @@
     if something changes such as your database credentials, or a path to a specific resource, 
     you'll only need to update it here. 
 */
+    
 try {
 $username='root';
 $password='1fiction';
-$conn = new PDO('mysql:host=127.0.0.1;dbname=vadim.dev', $username, $password);
+$conn = new PDO('mysql:host=localhost;dbname=vadim.dev', $username, $password);
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch(PDOException $e){
     echo 'ERROR: ' . $e->getMessage();
@@ -22,7 +23,7 @@ if(!$conn)
 
 $config = array(  
     "urls" => array(  
-        "baseUrl" => "vadim.dev"  
+        "baseUrl" => "localhost"  
     ),  
     "paths" => array(  
         "resources" => "/path/to/resources",  
@@ -35,7 +36,7 @@ $config = array(
 //Will be in Every pages Title
 $webname = 'ug.';
 //Root
-$root = 'http://vadim.dev';
+$root = 'http://localhost';
 /* 
     I will usually place the following in a bootstrap file or some type of environment 
     setup file (code that is run at the start of every page request), but they work 
@@ -53,5 +54,5 @@ defined("TEMPLATES_PATH")
     Error reporting. 
 */  
 ini_set("error_reporting", "true");  
-error_reporting(E_ALL|E_STRCT);  
+error_reporting(E_ALL|E_STRCT);
 ?>  

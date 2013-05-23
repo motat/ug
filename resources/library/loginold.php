@@ -11,20 +11,19 @@ $stmt->execute(array(
 	$row=$stmt->fetch();
 	$salt=$row['salt'];
 	$uid=$row['uid'];
-	//$password=sha1($password.$salt);
-	$crypter_pass=crypt($password, $salt);
+	$password=sha1($password.$salt);
 $sql='SELECT COUNT(*) FROM usr WHERE username=? AND password=?';
 $stmt=$conn->prepare($sql);
-$stmt->execute(array($username,$crypter_pass));
+$stmt->execute(array($username,$password));
 $count=$stmt->fetchColumn();
 if($count==1)
 	{
 		session_start();
 		$_SESSION['uid']=$row['uid']; 
-		header("location:$root/record.php?login=yes");
+		header("location:$root/add.php?p=3");
 	}
 	else
 	{
-		header("location:$root/record.php?login=no");
+		header("location:$root/login.php?");
 	}
 ?>

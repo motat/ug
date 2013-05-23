@@ -12,8 +12,9 @@
        	</style>
    	</HEAD>
    	<BODY>
+<?php include_once("analyticstracking.php") ?>
    		<div class='block'></div>
-		<center><h1>Dr<span class='blue'>ug.</span> Rec</h1></center>
+		<center><h3>Dr<span class='blue'>ug</span> Record</h3></center>
    		<div class='block'></div>
 		<div class='colSmallx'>
 			<div id='ballBlue'></div>
@@ -26,7 +27,7 @@
 		<div class='block'></div>
 		<div class='bar'></div>
 		<div class='padSmall'>
-			<h5><a href='login.php'>Login</a></h5>
+			<h5><a href='login.php'>Login</a> | <a href='register.php'>Register</a> | <a href='blog.php'>Blog</a></h5>
 		</div>
 		<div class='block'></div>
 		<center>
@@ -34,7 +35,7 @@
 				</br>
 				<div class='dash'>
 					<div class='padSmall'>
-						<h4><a href='http://reddit.com/u/ugbeta'><font color='white'>/u/<span class='blue'>ug</span>beta</font></a></h4>
+						<h4><a href='http://reddit.com/u/bettytheboop'><font color='white'>/u/<span class='blue'>bettytheboop</span></font></a></h4>
 					</div>
 				</div>
 				</br>

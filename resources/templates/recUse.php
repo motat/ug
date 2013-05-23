@@ -1,7 +1,5 @@
 <?php
 require_once(realpath(dirname(__FILE__) . "/../config.php"));
-session_start();
-
 $uid=$_SESSION['uid'];
 $sql='SELECT * FROM log WHERE uid=:uid ORDER BY logid ASC';
 $stmt=$conn->prepare($sql);
@@ -13,7 +11,9 @@ while($row=$stmt->fetch())
 	$dod=$row['dod'];
 	$compound=$row['compound'];
 	$dose=$row['dose'];
-	echo "<span class='smallx'>".$dod.": <span class='blue'>".$compound."(<span class='red'>".$dose."</span>)</span></span>
+	$unit=$row['unit'];
+	$logid=$row['logid'];
+	echo "<span class='smallx'><a href='resources/library/delUse.php?id=".$logid."'>x </a>".$dod.": <span class='blue'>".$compound."(<span class='red'>".$dose."".$unit."</span>)</span></span>
 		</br>";
 }
 ?>

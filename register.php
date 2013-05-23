@@ -7,6 +7,7 @@
 	    <script src="scripts/js.js"></script>
    	</HEAD>
    	<BODY>
+<?php include_once("analyticstracking.php") ?>
    		<?php require_once('resources/templates/nav.php'); ?>
          <div class='content'>
             <div class='padSmallx'>
@@ -21,6 +22,7 @@
                      <input type='password' name='password' placeholder='password'></input>
                      <button>Create Account</button>
                   </form>
+		<h5>Registration is temporarily closed due to Closed Beta. If you are interested in beta testing, or helping in any way, please message <a href='http://reddit.com/u/bettytheboop'>/u/bettytheboop</a></h5>
                </div>
             </div>
          </div>
