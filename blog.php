@@ -15,6 +15,17 @@
                <div class='padSmallx'>
                   <h4>May 23, 2013</h4>
                   </br>
+                  <h5>Cleaning Up</h5>
+                  </br>
+                  <h5>Organized a few things such as the log submit form. Added an 'advanced form' option which basically lets people go from documenting just the date/drug to documenting trip reports as well. If they'd like to.</h5>
+                  </br>
+                  <h5>I've been messing around quite with graphs and charts, mostly trying to figure out configuration that are actually interesting/imporant to you.</h5>
+               </div>
+            </div>
+            <div class='content'>
+               <div class='padSmallx'>
+                  <h4>May 23, 2013</h4>
+                  </br>
                   <h5>Security Updates</h5>
                   </br>
                   <h5>Today I did quite a bit of security updates to avoid sql injections and to also secure your information and encrypt it with a far advanced and more recent system then what I was using.</h5>

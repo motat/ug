@@ -41,6 +41,8 @@ if($p == 1) { ?>
                   <option value='Amphetamine'>Amphetamine</option>
                   <option value='Heroin'>Heroin</option>
                   <option value='Spice'>Spice</option>
+                  <option value='DXM HBr'>DXM HBr</option>
+                  <option value='DXM Polysterix'>DXM Polysterix</option>
          		</select>
             </div>
             </br>
@@ -58,9 +60,17 @@ if($p == 1) { ?>
                   </select>
                </div>
             <div class='clear'></div>
+          </br>
+            <div class='right'>
+              <span class='small'><a href='add.php?p=4'>more recording options</a></span>
+            </div>
+            <div class='clear'></div>
             </br>
-            <span class='smallx'>Are you looking for a compound or unit measurment system that's not on the list? Submit it <a href='add.php?p=2'>*here*</a></span>
             <button>Submit to Log</button>
+          </br>
+        </br>
+             <span class='smallx'>Substance or Unit missing? Submit it <a href='add.php?p=2'>*here*</a></span>
+          </br>
          </form>        
       </div>
    </div>
@@ -88,6 +98,66 @@ if($p == 3) { ?>
             <input type='text' name='username' placeholder='username'></input>
             <input type='password' name='password' placeholder='password'></input>
             <button>Report Bug</button>
+         </form>        
+      </div>
+   </div>
+<?php } ?>
+<?php
+$p=$_GET['p'];
+if($p == 4) { ?>
+   <div class='content'>
+      <div class='padSmallx'>
+         <form action='resources/library/logMore.php' method='POST'>
+            <div class='colFull'>
+               <input type='text' name='date' id='datepicker' placeholder='Date'></input>
+            </div>
+             </br>
+            <div class='colFull'>
+               <select name='compound'>
+                  <option value='LSD'>LSD</option>
+                  <option value='Mushrooms'>Mushrooms</option>
+                  <option value='MDMA'>MDMA</option>
+                  <option value='Cannabis'>Cannabis</option>
+                  <option value='Alcohol'>Alcohol</option>
+                  <option value='Cocaine'>Cocaine</option>
+                  <option value='Methamphetamine'>Methamphetamine</option>
+                  <option value='Amphetamine'>Amphetamine</option>
+                  <option value='Heroin'>Heroin</option>
+                  <option value='Spice'>Spice</option>
+            </select>
+            </div>
+            </br>
+               <div class='colLarge left'>
+                  <input type='text' name='dose' placeholder='150'></input>
+               </div>
+           
+               <div class='colSmall right'>
+                  <select name='unit'>
+                     <option value='ug'>ug</option>
+                     <option value='mg'>mg</option>
+                     <option value='g'>g</option>
+                     <option value='ml'>ml</option>
+                     <option value='oz'>oz</option>
+                  </select>
+               </div>
+            <div class='clear'></div>
+          </br>
+            <div class='colFull'>
+               <input type='text' name='title' placeholder='Trip Title'></input>
+            </div>
+            </br>
+            <textarea name="report" cols="25" rows="5">Report
+            </textarea><br>
+            <div class='right'>
+              <span class='small'><a href='add.php?p=1'>less recording options</a></span>
+            </div>
+            <div class='clear'></div>
+            </br>
+            <button>Submit to Log</button>
+          </br>
+        </br>
+             <span class='smallx'>Substance or Unit missing? Submit it <a href='add.php?p=2'>*here*</a></span>
+          </br>
          </form>        
       </div>
    </div>

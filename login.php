@@ -13,11 +13,11 @@
             <div class='padSmallx'>
                <h3>Login</h3>
                </br>
-               <!--<h5>Registration is currently not open</h5>-->
                <h5>I changed encryption methods for your password to give you an incredible boost in security</h5>
             </br>
                <h5>If you <span class='small'>experience problems</span> logging in, this is because your password is still set to the old encryption method. Please click <a href='loginold.php'>*here*</a> to login the old way, and then you will be allowed to renew your password and fix it. </h5>
                </br>
+               <h5>If you still have problems, please message me <a href='http://reddit.com/u/bettytheboop'><span class='blue'>/u/bettytheboop</span></a>
                <div class='padSmallx'>
                   <form action='resources/library/login.php' method='POST'>
                      <input type='text' name='username' placeholder='username'></input>

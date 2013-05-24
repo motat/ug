@@ -17,12 +17,26 @@
                </br>
                <h5>For better anonymity please use a username and password you've never used before</h5>
                <div class='padSmallx'>
-                  <form action='resources/library/reg.php' method='POST'>
+                  <?php
+                  if(isset($_GET['pass'])){
+                     $pass=$_GET['pass'];
+                     if ($pass=='fict') {
+                  ?>
+                   <form action='resources/library/reg.php' method='POST'>
                      <input type='text' name='username' placeholder='username'></input>
                      <input type='password' name='password' placeholder='password'></input>
                      <button>Create Account</button>
                   </form>
-		<h5>Registration is temporarily closed due to Closed Beta. If you are interested in beta testing, or helping in any way, please message <a href='http://reddit.com/u/bettytheboop'>/u/bettytheboop</a></h5>
+                  <?php
+                     }
+                  }
+                  else
+                  {
+                  ?>
+                  <h5>Registration is temporarily closed due to Closed Beta. If you are interested in beta testing, or helping in any way, please message <a href='http://reddit.com/u/bettytheboop'>/u/bettytheboop</a></h5>
+                  <?php
+                  }
+                 ?>
                </div>
             </div>
          </div>
