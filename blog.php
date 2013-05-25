@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <HTML>
    	<HEAD>
@@ -11,6 +14,16 @@
    		<?php require_once('resources/templates/nav.php'); ?>
          <div class='padSmallx'>
             <h3>Bettys Blog</h3>
+            <div class='content'>
+               <div class='padSmallx'>
+                  <h4>May 25, 2013</h4>
+                  </br>
+                  <h5>Redesign</h5>
+                  </br>
+                  <h5>Made the overall UI and the flow of things quite a bit more simpler.</h5>
+                  </br>
+               </div>
+            </div>
             <div class='content'>
                <div class='padSmallx'>
                   <h4>May 23, 2013</h4>

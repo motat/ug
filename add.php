@@ -1,5 +1,8 @@
 <?php
 session_start();
+if(!isset($_SESSION['uid'])) {
+   header("location:$root/login.php");
+}
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <HTML>
@@ -43,6 +46,9 @@ if($p == 1) { ?>
                   <option value='Spice'>Spice</option>
                   <option value='DXM HBr'>DXM HBr</option>
                   <option value='DXM Polysterix'>DXM Polysterix</option>
+                  <option value='Benzo'>Benzo</option>
+                  <option value='Mescaline'>Mescaline</option>
+                  <option value='Opioid'>Opioid</option>
          		</select>
             </div>
             </br>
@@ -124,6 +130,11 @@ if($p == 4) { ?>
                   <option value='Amphetamine'>Amphetamine</option>
                   <option value='Heroin'>Heroin</option>
                   <option value='Spice'>Spice</option>
+                  <option value='DXM HBr'>DXM HBr</option>
+                  <option value='DXM Polysterix'>DXM Polysterix</option>
+                  <option value='Benzo'>Benzo</option>
+                  <option value='Mescaline'>Mescaline</option>
+                  <option value='Opioid'>Opioid</option>
             </select>
             </div>
             </br>
