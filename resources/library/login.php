@@ -25,6 +25,6 @@ if($count==1)
 	}
 	else
 	{
-		header("location:$root/record.php?login=no");
+		header("location:$root/login.php?m=1");
 	}
 ?>

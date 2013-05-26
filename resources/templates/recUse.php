@@ -20,7 +20,10 @@ while($row=$stmt->fetch())
           <div class='padSmallx'>
             <div id='logDate'>
               <span class='smallx'>".$dod."</span>
-              <span class='smallx'><a href='resources/library/delUse.php?id=".$logid."'>x </a></span>
+              </br>
+              </br>
+              </br>
+              <span class='smallx fButton'><a href='resources/library/delUse.php?id=".$logid."'>delete </a></span> &nbsp;<span class='smallx fButton'><a href='edit.php?id=".$logid."&uid=".$uid."'>edit</a></span>
             </div>
             <div id='logInfo'>
               <span class='medium blue'>".$compound."</span>
